@@ -1,0 +1,17 @@
+# Global
+._*
+.AppleDouble
+.DS_Store
+.localized
+.LSOverride
+.Spotlight-V100
+.Trashes
+Icon
+Desktop.ini
+ehthumbs.db
+Thumbs.db
+*~
+
+# Project
+main.less.cache
+

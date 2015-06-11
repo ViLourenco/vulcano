@@ -1,0 +1,644 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Vulcano v2.2.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-02-10 07:21-0300\n"
+"PO-Revision-Date: 2014-02-10 07:21-0300\n"
+"Last-Translator: Rafael Funchal <rafaelfunchal@gmail.com>\n"
+"Language-Team: WordPress Brasil Group\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encvulcanog: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Poedit 1.5.4\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;"
+"_n_noop:1,2;_c,_nc:4c,1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2\n"
+"X-Poedit-Basepath: .\n"
+"X-Textdomain-Support: yes\n"
+"X-Poedit-SearchPath-0: ..\n"
+
+# @ vulcano
+#: ../404.php:15
+msgid "Not Found"
+msgstr "Nada Encontrado"
+
+# @ vulcano
+#: ../404.php:19
+msgid "It looks like nothing was found at this location. Maybe try a search?"
+msgstr ""
+"Parece que nada foi encontrado neste local. Talvez tentar uma pesquisa?"
+
+# @ vulcano
+#: ../archive.php:30
+#, php-format
+msgid "Daily Archives: %s"
+msgstr "Arquivos Diários: %s"
+
+# @ vulcano
+#: ../archive.php:33
+#, php-format
+msgid "Monthly Archives: %s"
+msgstr "Arquivos Mensais: %s"
+
+# @ vulcano
+#: ../archive.php:33
+msgctxt "monthly archives date format"
+msgid "F Y"
+msgstr "F Y"
+
+# @ vulcano
+#: ../archive.php:36
+#, php-format
+msgid "Yearly Archives: %s"
+msgstr "Arquivos Anuais: %s"
+
+# @ vulcano
+#: ../archive.php:36
+msgctxt "yearly archives date format"
+msgid "Y"
+msgstr "Y"
+
+# @ vulcano
+#: ../archive.php:39
+msgid "Archives"
+msgstr "Arquivos"
+
+# @ vulcano
+#: ../audio.php:24 ../video.php:24
+msgid "URL:"
+msgstr "URL:"
+
+# @ vulcano
+#: ../audio.php:30 ../image.php:40 ../video.php:30
+#, php-format
+msgid "Back to %s"
+msgstr "Voltar para %s"
+
+# @ vulcano
+#: ../audio.php:30 ../image.php:40 ../video.php:30
+#, php-format
+msgid "<span class=\"meta-nav\">&larr;</span> %s"
+msgstr "<span class=\"meta-nav\">&larr;</span> %s"
+
+# @ vulcano
+#: ../author.php:30
+#, php-format
+msgid "All posts by %s"
+msgstr "Todas as publicações por %s"
+
+# @ vulcano
+#: ../category.php:19
+#, php-format
+msgid "Category Archives: %s"
+msgstr "Arquivo da Categoria: %s"
+
+# @ vulcano
+#: ../comments.php:13
+msgid ""
+"This post is password protected. Enter the password to view all comments."
+msgstr ""
+"Esse post é protegido por senha. Informe a senha para ver todos os "
+"comentários."
+
+# @ vulcano
+#: ../comments.php:22
+msgid "0 Comments"
+msgstr "0 Comentários"
+
+# @ vulcano
+#: ../comments.php:22 ../content.php:53
+msgid "1 Comment"
+msgstr "1 Comentário"
+
+# @ vulcano
+#: ../comments.php:22 ../content.php:53
+msgid "% Comments"
+msgstr "% Comentários"
+
+# @ vulcano
+#: ../comments.php:23
+msgid "to"
+msgstr "para"
+
+# @ vulcano
+#: ../comments.php:28 ../comments.php:37
+msgid "&larr; Old Comments"
+msgstr "&larr; Comentários Antigos"
+
+# @ vulcano
+#: ../comments.php:29 ../comments.php:38
+msgid "New Comments &rarr;"
+msgstr "Novos Comentários &rarr;"
+
+# @ vulcano
+#: ../comments.php:43
+msgid "Comments closed."
+msgstr "Comentários não são permitidos."
+
+# @ vulcano
+#: ../comments.php:54
+msgid "Comment"
+msgstr "Comentário"
+
+# @ vulcano
+#: ../comments.php:56
+msgid "Name"
+msgstr "Nome"
+
+# @ vulcano
+#: ../comments.php:57
+msgid "E-mail"
+msgstr "E-mail"
+
+# @ vulcano
+#: ../comments.php:58
+msgid "Website"
+msgstr "Website"
+
+# @ vulcano
+#: ../content-none.php:11
+msgid "Nothing Found"
+msgstr "Nada Encontrado"
+
+# @ vulcano
+#: ../content-none.php:17
+#, php-format
+msgid ""
+"Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+"Pronto para publicar o seu primeiro post? <a href=\"%1$s\">Comece agora "
+"aqui</a>."
+
+# @ vulcano
+#: ../content-none.php:21
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
+msgstr ""
+"Desculpe, mas nada foi encontrado com os termos da sua pesquisa. Por favor, "
+"tente novamente com algumas palavras-chave diferentes."
+
+# @ vulcano
+#: ../content-none.php:26
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
+msgstr ""
+"Parece que não conseguimos encontrar o que você está procurando. Talvez a "
+"pesquisa pode ajudar."
+
+# @ vulcano
+#: ../content-page.php:17 ../content.php:38
+msgid "Pages:"
+msgstr "Páginas:"
+
+# @ vulcano
+#: ../content.php:36
+msgid "Continue reading <span class=\"meta-nav\">&rarr;</span>"
+msgstr "Continue lendo <span class=\"meta-nav\">&rarr;</span>"
+
+# @ vulcano
+#: ../content.php:49
+msgid "Posted in:"
+msgstr "Publicado em:"
+
+# @ vulcano
+#: ../content.php:49
+msgctxt "Used between list items, there is a space after the comma."
+msgid ", "
+msgstr ", "
+
+# @ vulcano
+#: ../content.php:51
+msgid "Tagged as:"
+msgstr "Marcado como:"
+
+# @ vulcano
+#: ../content.php:53
+msgid "Leave a comment"
+msgstr "Deixe um comentário"
+
+# @ vulcano
+#: ../footer.php:17
+msgid "All rights reserved"
+msgstr "Todos os direitos reservados"
+
+# @ vulcano
+#: ../footer.php:17
+#, php-format
+msgid ""
+"Powered by the <a href=\"%s\" rel=\"nofollow\" target=\"_blank\">Vulcano</a> "
+"forces and <a href=\"%s\" rel=\"nofollow\" target=\"_blank\">WordPress</a>."
+msgstr ""
+"Powered by the <a href=\"%s\" rel=\"nofollow\" target=\"_blank\">Vulcano</a> "
+"forces and <a href=\"%s\" rel=\"nofollow\" target=\"_blank\">WordPress</a>."
+
+# @ vulcano
+#: ../functions.php:64
+msgid "Main Menu"
+msgstr "Menu Principal"
+
+# @ vulcano
+#: ../functions.php:157
+msgid "Main Sidebar"
+msgstr "Sidebar Principal"
+
+# @ vulcano
+#: ../functions.php:159
+msgid "Site Main Sidebar"
+msgstr "Sidebar principal do site"
+
+# @ vulcano
+#: ../header.php:53
+msgid "Skip to content"
+msgstr "Pular para o conteúdo"
+
+# @ vulcano
+#: ../header.php:56
+msgid "Toggle navigation"
+msgstr "Alternar navegação"
+
+# @ vulcano
+#: ../header.php:83
+msgid "Search:"
+msgstr "Pesquisar:"
+
+# @ vulcano
+#: ../header.php:87 ../searchform.php:12
+msgid "Search"
+msgstr "Pesquisa"
+
+# @ vulcano
+#: ../image.php:23
+#, php-format
+msgid "Image total size: %s pixels"
+msgstr "Tamanho total da imagem: %s pixels"
+
+# @ vulcano
+#: ../image.php:23
+msgid "Full image link"
+msgstr "Link da imagem completa"
+
+# @ vulcano
+#: ../image.php:34
+msgid "&larr; Previous image"
+msgstr "&larr; Imagem anterior"
+
+# @ vulcano
+#: ../image.php:35
+msgid "Next image &rarr;"
+msgstr "Próxima imagem &rarr;"
+
+# @ vulcano
+#: ../search.php:17
+#, php-format
+msgid "Search Results for: %s"
+msgstr "Resultado de Busca por: %s"
+
+# @ vulcano
+#: ../tag.php:21
+#, php-format
+msgid "Tag Archives: %s"
+msgstr "Arquivo da Tag: %s"
+
+# @ vulcano
+#: ../core/helpers.php:56
+msgid "&laquo; Previous"
+msgstr "&laquo; Anterior"
+
+# @ vulcano
+#: ../core/helpers.php:57
+msgid "Next &raquo;"
+msgstr "Próximo &raquo;"
+
+# @ vulcano
+#: ../core/helpers.php:99
+msgid "Related Posts"
+msgstr "Artigos Relacionados"
+
+# @ vulcano
+#: ../core/helpers.php:228
+msgid "Home"
+msgstr "Início"
+
+# @ vulcano
+#: ../core/helpers.php:320
+#, php-format
+msgid "%sCategory: %s%s"
+msgstr "%sCategoria: %s%s"
+
+# @ vulcano
+#: ../core/helpers.php:324
+#, php-format
+msgid "%sTag: %s%s"
+msgstr "%sTag: %s%s"
+
+# @ vulcano
+#: ../core/helpers.php:332
+#, php-format
+msgid "%sSearch result for: &quot;%s&quot;%s"
+msgstr "%sResultado da busca para: &quot;%s&quot;%s"
+
+# @ vulcano
+#: ../core/helpers.php:339
+msgid "Posted by"
+msgstr "Publicado por"
+
+# @ vulcano
+#: ../core/helpers.php:378
+msgid "404 Error"
+msgstr "Erro 404"
+
+# @ vulcano
+#: ../core/helpers.php:385 ../core/helpers.php:387 ../inc/optimize.php:27
+#, php-format
+msgid "Page %s"
+msgstr "Página %s"
+
+# @ vulcano
+#: ../core/classes/class-bootstrap-nav.php:203
+msgid "Add a menu"
+msgstr "Adicionar um menu"
+
+# @ vulcano
+#: ../core/classes/class-contact-form.php:170
+#, php-format
+msgid "Message sent by the form %s in %s at %s"
+msgstr "Mensagem enviada pelo formulário %s em %s às %s"
+
+# @ vulcano
+#: ../core/classes/class-metabox.php:78 ../core/classes/class-metabox.php:424
+#: ../core/classes/class-theme-options.php:89
+#: ../core/classes/class-theme-options.php:616
+msgid "Add images in gallery"
+msgstr "Adicionar imagens na galeria"
+
+# @ vulcano
+#: ../core/classes/class-metabox.php:79
+#: ../core/classes/class-theme-options.php:90
+msgid "Add in gallery"
+msgstr "Adicionar na galeria"
+
+# @ vulcano
+#: ../core/classes/class-metabox.php:80 ../core/classes/class-metabox.php:388
+#: ../core/classes/class-metabox.php:413
+#: ../core/classes/class-theme-options.php:91
+#: ../core/classes/class-theme-options.php:570
+#: ../core/classes/class-theme-options.php:605
+msgid "Remove image"
+msgstr "Remover imagem"
+
+# @ vulcano
+#: ../core/classes/class-metabox.php:81
+#: ../core/classes/class-theme-options.php:92
+msgid "Choose a file"
+msgstr "Selecione um arquivo"
+
+# @ vulcano
+#: ../core/classes/class-metabox.php:82
+#: ../core/classes/class-theme-options.php:93
+msgid "Add file"
+msgstr "Adicionar arquivo"
+
+# @ vulcano
+#: ../core/classes/class-metabox.php:366
+#: ../core/classes/class-theme-options.php:537
+msgid "Select file"
+msgstr "Selecionar arquivo"
+
+# @ vulcano
+#: ../core/classes/class-metabox.php:388
+#: ../core/classes/class-theme-options.php:570
+msgid "Select image"
+msgstr "Selecionar imagem"
+
+# @ vulcano
+#: ../core/classes/class-post-type.php:73
+#: ../core/classes/class-post-type.php:80
+#: ../core/classes/class-taxonomy.php:75 ../core/classes/class-taxonomy.php:84
+#, php-format
+msgid "%ss"
+msgstr "%ss"
+
+# @ vulcano
+#: ../core/classes/class-post-type.php:74
+#: ../core/classes/class-taxonomy.php:76
+#, php-format
+msgid "%s"
+msgstr "%s"
+
+# @ vulcano
+#: ../core/classes/class-post-type.php:75
+#: ../core/classes/class-taxonomy.php:78
+#, php-format
+msgid "View %s"
+msgstr "Ver %s"
+
+# @ vulcano
+#: ../core/classes/class-post-type.php:76
+#: ../core/classes/class-taxonomy.php:79
+#, php-format
+msgid "Edit %s"
+msgstr "Editar %s"
+
+# @ vulcano
+#: ../core/classes/class-post-type.php:77
+#: ../core/classes/class-taxonomy.php:80
+#, php-format
+msgid "Search %s"
+msgstr "Pesquisar %s"
+
+# @ vulcano
+#: ../core/classes/class-post-type.php:78
+#: ../core/classes/class-taxonomy.php:81
+#, php-format
+msgid "Update %s"
+msgstr "Atualizar  %s"
+
+# @ vulcano
+#: ../core/classes/class-post-type.php:79
+#: ../core/classes/class-taxonomy.php:82 ../core/classes/class-taxonomy.php:83
+#, php-format
+msgid "Parent %s:"
+msgstr "Parente %s"
+
+# @ vulcano
+#: ../core/classes/class-post-type.php:81
+msgid "Add New"
+msgstr "Adicionar Novo"
+
+# @ vulcano
+#: ../core/classes/class-post-type.php:82
+#: ../core/classes/class-taxonomy.php:85
+#, php-format
+msgid "Add New %s"
+msgstr "Adicionar Novo %s"
+
+# @ vulcano
+#: ../core/classes/class-post-type.php:83
+#: ../core/classes/class-taxonomy.php:86
+#, php-format
+msgid "New %s"
+msgstr "Novo %s"
+
+# @ vulcano
+#: ../core/classes/class-post-type.php:84
+#: ../core/classes/class-taxonomy.php:87
+#, php-format
+msgid "All %ss"
+msgstr "Todos os %ss"
+
+# @ vulcano
+#: ../core/classes/class-post-type.php:85
+#, php-format
+msgid "No %s found"
+msgstr "Nenhum %s encontrado"
+
+# @ vulcano
+#: ../core/classes/class-post-type.php:86
+#, php-format
+msgid "No %s found in Trash"
+msgstr "Nenhum %s encontrado na Lixeira"
+
+# @ vulcano
+#: ../core/classes/class-taxonomy.php:77
+#, php-format
+msgid "Add or Remove %ss"
+msgstr "Adicionar ou Remover %ss"
+
+# @ vulcano
+#: ../core/classes/class-taxonomy.php:88
+#, php-format
+msgid "Separate %ss with comma"
+msgstr "Separe %ss com vírgula"
+
+# @ vulcano
+#: ../core/classes/class-taxonomy.php:89
+#, php-format
+msgid "Choose from %ss most used"
+msgstr "Escolher entre os %ss mais usados"
+
+# @ vulcano
+#: ../core/classes/abstracts/abstract-front-end-form.php:234
+msgid "Submit"
+msgstr "Enviar"
+
+# @ vulcano
+#: ../core/classes/abstracts/abstract-front-end-form.php:276
+msgid "Form submitted successfully!"
+msgstr "Formulário enviado com sucesso!"
+
+# @ vulcano
+#: ../core/classes/abstracts/abstract-front-end-form.php:514
+#, php-format
+msgid "%s is required."
+msgstr "%s é um campo obrigatório."
+
+# @ vulcano
+#: ../core/classes/abstracts/abstract-front-end-form.php:520
+#, php-format
+msgid "%s must be an email address valid."
+msgstr "%s precisa ser um endereço de email válido"
+
+#: ../core/classes/widgets/class-widget-like-box.php:20
+msgid "Facebook Like Box"
+msgstr "Caixa de Curtir do Facebook"
+
+#: ../core/classes/widgets/class-widget-like-box.php:21
+msgid "This widget includes a facebook like box on your blog"
+msgstr "Esse widget inclui a caixa de curtir do Facebook em seu site"
+
+#: ../core/classes/widgets/class-widget-like-box.php:48
+msgid "Title:"
+msgstr "Título:"
+
+#: ../core/classes/widgets/class-widget-like-box.php:54
+msgid "Facebook Page URL:"
+msgstr "URL da página do Facebook:"
+
+#: ../core/classes/widgets/class-widget-like-box.php:60
+msgid "Width:"
+msgstr "Largura:"
+
+#: ../core/classes/widgets/class-widget-like-box.php:66
+msgid "Height:"
+msgstr "Altura:"
+
+#: ../core/classes/widgets/class-widget-like-box.php:72
+msgid "Color Scheme:"
+msgstr "Esquema de cores:"
+
+#: ../core/classes/widgets/class-widget-like-box.php:74
+msgid "Dark"
+msgstr "Escuro"
+
+#: ../core/classes/widgets/class-widget-like-box.php:75
+msgid "Light"
+msgstr "Claro"
+
+#: ../core/classes/widgets/class-widget-like-box.php:81
+msgid "Show Friends Faces"
+msgstr "Exibir rostos dos amigos"
+
+#: ../core/classes/widgets/class-widget-like-box.php:86
+msgid "Show Posts"
+msgstr "Exibir atualizações"
+
+#: ../core/classes/widgets/class-widget-like-box.php:91
+msgid "Show Header"
+msgstr "Exibir cabeçalho"
+
+#: ../core/classes/widgets/class-widget-like-box.php:96
+msgid "Show Border"
+msgstr "Exibir borda"
+
+# @ vulcano
+#: ../inc/comments-loop.php:23
+msgid "Pingback:"
+msgstr "Pingback:"
+
+# @ vulcano
+#: ../inc/comments-loop.php:23 ../inc/comments-loop.php:33
+msgid "Edit"
+msgstr "Editar"
+
+# @ vulcano
+#: ../inc/comments-loop.php:32
+msgid "in"
+msgstr "em"
+
+# @ vulcano
+#: ../inc/comments-loop.php:32
+msgid "at"
+msgstr "as"
+
+# @ vulcano
+#: ../inc/comments-loop.php:32
+msgid "said:"
+msgstr "disse:"
+
+# @ vulcano
+#: ../inc/comments-loop.php:36
+msgid "Your comment is awaiting moderation."
+msgstr "Seu comentário está aguardando moderação."
+
+# @ vulcano
+#: ../inc/comments-loop.php:41
+msgid "Respond"
+msgstr "Responder"
+
+# @ vulcano
+#: ../inc/template-tags.php:62
+msgid "Sticky"
+msgstr "Destacado"
+
+# @ vulcano
+#: ../inc/template-tags.php:67
+msgid "Posted in"
+msgstr "Publicado em"
+
+# @ vulcano
+#: ../inc/template-tags.php:70
+msgid "by"
+msgstr "por"
