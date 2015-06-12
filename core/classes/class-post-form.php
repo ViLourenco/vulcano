@@ -6,8 +6,8 @@
  *
  * @package  Vulcano
  * @category Post Form
- * @author   WPBrasil
- * @version  2.1.4
+ * @author   Paulo Iankoski
+ * @version  1.0.0
  */
 class Odin_Post_Form extends Odin_Front_End_Form {
 

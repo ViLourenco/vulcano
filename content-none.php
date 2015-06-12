@@ -3,7 +3,7 @@
  * The template for displaying a "No posts found" message.
  *
  * @package Vulcano
- * @since 2.2.0
+ * @since 1.0.0
  */
 ?>
 

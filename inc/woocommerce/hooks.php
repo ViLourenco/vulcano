@@ -15,7 +15,7 @@
  * Content wrapper before and after
  * @see  vulcano_before_content()
  * @see  vulcano_after_content()
- * @since  2.2.6
+ * @since  1.0.0
  */
 remove_action( 'woocommerce_before_main_content', 'woocommerce_output_content_wrapper', 10 );
 remove_action( 'woocommerce_after_main_content', 'woocommerce_output_content_wrapper_end', 10 );
@@ -25,7 +25,7 @@ add_action( 'woocommerce_after_main_content', 'vulcano_after_content', 10 );
 /**
  * Sidebar
  * @see woocommerce_sidebars
- * @since  2.2.6
+ * @since  1.0.0
  */
 remove_action( 'woocommerce_sidebar', 'woocommerce_get_sidebar', 10 );
 
@@ -36,7 +36,7 @@ remove_action( 'woocommerce_sidebar', 'woocommerce_get_sidebar', 10 );
  * do_action( 'vulcano_content_top' ); on anywhere for show the breadcrumb
  *
  * @see woocommerce_breadcrumb
- * @since  2.2.6
+ * @since  1.0.0
  */
 remove_action( 'woocommerce_before_main_content', 'woocommerce_breadcrumb', 20, 0 );
 add_action( 'vulcano_content_top', 'woocommerce_breadcrumb', 10 );
@@ -46,7 +46,7 @@ add_action( 'vulcano_content_top', 'woocommerce_breadcrumb', 10 );
  * @see  vulcano_thumbnail_columns()
  * @see  vulcano_products_per_page()
  * @see  vulcano_loop_columns()
- * @since  2.2.6
+ * @since  1.0.0
  */
 add_filter( 'woocommerce_product_thumbnails_columns', 	'vulcano_thumbnail_columns' );;
 add_filter( 'loop_shop_per_page', 						'vulcano_products_per_page' );

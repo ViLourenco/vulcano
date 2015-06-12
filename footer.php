@@ -6,7 +6,7 @@
  * #main div element.
  *
  * @package Vulcano
- * @since 2.2.0
+ * @since 1.0.0
  */
 ?>
 

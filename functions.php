@@ -10,7 +10,7 @@
  * see http://codex.wordpress.org/Plugin_API
  *
  * @package Vulcano
- * @since 2.2.0
+ * @since 1.0.0
  */
 
 /**
@@ -46,7 +46,7 @@ if ( ! function_exists( 'vulcano_setup_features' ) ) {
 	/**
 	 * Setup theme features.
 	 *
-	 * @since  2.2.0
+	 * @since  1.0.0
 	 *
 	 * @return void
 	 */
@@ -170,7 +170,7 @@ add_action( 'after_setup_theme', 'vulcano_setup_features' );
 /**
  * Register widget areas.
  *
- * @since  2.2.0
+ * @since  1.0.0
  *
  * @return void
  */
@@ -193,7 +193,7 @@ add_action( 'widgets_init', 'vulcano_widgets_init' );
 /**
  * Flush Rewrite Rules for new CPTs and Taxonomies.
  *
- * @since  2.2.0
+ * @since  1.0.0
  *
  * @return void
  */
@@ -206,7 +206,7 @@ add_action( 'after_switch_theme', 'vulcano_flush_rewrite' );
 /**
  * Load site scripts.
  *
- * @since  2.2.0
+ * @since  1.0.0
  *
  * @return void
  */
@@ -219,23 +219,17 @@ function vulcano_enqueue_scripts() {
 	// jQuery.
 	wp_enqueue_script( 'jquery' );
 
-	// General scripts.
-	if ( defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG ) {
-		// Bootstrap.
-		wp_enqueue_script( 'bootstrap', $template_url . '/assets/js/libs/bootstrap.min.js', array(), null, true );
+	// Bootstrap.
+	wp_enqueue_script( 'bootstrap', $template_url . '/assets/js/libs/bootstrap.min.js', array(), null, true );
 
-		// FitVids.
-		wp_enqueue_script( 'fitvids', $template_url . '/assets/js/libs/jquery.fitvids.js', array(), null, true );
+	// FitVids.
+	wp_enqueue_script( 'fitvids', $template_url . '/assets/js/libs/jquery.fitvids.js', array(), null, true );
 
-		// Main jQuery.
-		wp_enqueue_script( 'vulcano-main', $template_url . '/assets/js/main.js', array(), null, true );
-	} else {
-		// Grunt main file with Bootstrap, FitVids and others libs.
-		wp_enqueue_script( 'vulcano-main-min', $template_url . '/assets/js/main.min.js', array(), null, true );
-	}
+	// HTML5 Fix.
+	wp_enqueue_script( 'html5-fix', $template_url . '/assets/js/html5.js', array(), null, true );
 
-	// Grunt watch livereload in the browser.
-	// wp_enqueue_script( 'vulcano-livereload', 'http://localhost:35729/livereload.js?snipver=1', array(), null, true );
+	// Main jQuery.
+	wp_enqueue_script( 'vulcano-main', $template_url . '/assets/js/main.js', array(), null, true );
 
 	// Load Thread comments WordPress script.
 	if ( is_singular() && get_option( 'thread_comments' ) ) {
@@ -248,7 +242,7 @@ add_action( 'wp_enqueue_scripts', 'vulcano_enqueue_scripts', 1 );
 /**
  * Vulcano custom stylesheet URI.
  *
- * @since  2.2.0
+ * @since  1.0.0
  *
  * @param  string $uri Default URI.
  * @param  string $dir Stylesheet directory URI.
@@ -264,7 +258,7 @@ add_filter( 'stylesheet_uri', 'vulcano_stylesheet_uri', 10, 2 );
 /**
  * Query WooCommerce activation
  *
- * @since  2.2.6
+ * @since  1.0.0
  *
  * @return boolean
  */
@@ -293,6 +287,11 @@ require_once get_template_directory() . '/inc/comments-loop.php';
  * WP optimize functions.
  */
 require_once get_template_directory() . '/inc/optimize.php';
+
+/**
+ * WP Hooks.
+ */
+require_once get_template_directory() . '/inc/hooks.php';
 
 /**
  * Custom template tags.

@@ -11,7 +11,7 @@ if ( ! function_exists( 'vulcano_cart_link' ) ) {
 	 * Displayed a link to the cart including the number of items present and the cart total
 	 * @param  array $settings Settings
 	 * @return array           Settings
-	 * @since  2.2.6
+	 * @since  1.0.0
 	 */
 	function vulcano_cart_link() {
 		if ( is_cart() ) {
@@ -32,7 +32,7 @@ if ( ! function_exists( 'vulcano_cart_link' ) ) {
 if ( ! function_exists( 'vulcano_product_search' ) ) {
 	/**
 	 * Display Product Search
-	 * @since  2.2.6
+	 * @since  1.0.0
 	 * @uses  is_woocommerce_activated() check if WooCommerce is activated
 	 * @return void
 	 */
@@ -49,7 +49,7 @@ if ( ! function_exists( 'vulcano_product_search' ) ) {
 if ( ! function_exists( 'vulcano_header_cart' ) ) {
 	/**
 	 * Display Header Cart
-	 * @since  2.2.6
+	 * @since  1.0.0
 	 * @uses  is_woocommerce_activated() check if WooCommerce is activated
 	 * @return void
 	 */

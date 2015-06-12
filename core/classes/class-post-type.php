@@ -6,8 +6,8 @@
  *
  * @package  Vulcano
  * @category Post Types
- * @author   WPBrasil
- * @version  2.1.4
+ * @author   Paulo Iankoski
+ * @version  1.0.0
  */
 class Odin_Post_Type {
 

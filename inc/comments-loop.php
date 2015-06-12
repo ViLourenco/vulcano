@@ -4,7 +4,7 @@ if ( ! function_exists( 'vulcano_comment_loop' ) ) {
 	/**
 	 * Custom comments loop.
 	 *
-	 * @since 2.2.0
+	 * @since 1.0.0
 	 *
 	 * @param  object $comment Comment object.
 	 * @param  array  $args    Comment arguments.

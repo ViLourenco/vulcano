@@ -39,7 +39,7 @@ if ( ! function_exists( 'vulcano_after_content' ) ) {
 /**
  * Default loop columns on product archives
  * @return integer products per row
- * @since  2.2.6
+ * @since  1.0.0
  */
 function vulcano_loop_columns() {
 	return apply_filters( 'vulcano_loop_columns', 4 ); // 4 products per row
@@ -48,7 +48,7 @@ function vulcano_loop_columns() {
 /**
  * Product gallery thumnail columns
  * @return integer number of columns
- * @since  2.2.6
+ * @since  1.0.0
  */
 function vulcano_thumbnail_columns() {
 	return intval( apply_filters( 'vulcano_product_thumbnail_columns', 4 ) );
@@ -57,7 +57,7 @@ function vulcano_thumbnail_columns() {
 /**
  * Products per page
  * @return integer number of products
- * @since  2.2.6
+ * @since  1.0.0
  */
 function vulcano_products_per_page() {
 	return intval( apply_filters( 'vulcano_products_per_page', 12 ) );

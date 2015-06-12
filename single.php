@@ -3,7 +3,7 @@
  * The Template for displaying all single posts.
  *
  * @package Vulcano
- * @since 2.2.0
+ * @since 1.0.0
  */
 
 get_header(); ?>

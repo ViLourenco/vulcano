@@ -5,7 +5,7 @@
  * If no active widgets in this sidebar, it will shows Recent Posts, Archives and Tag Cloud widgets.
  *
  * @package Vulcano
- * @since 2.2.0
+ * @since 1.0.0
  */
 ?>
 

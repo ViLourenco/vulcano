@@ -8,8 +8,8 @@
  *
  * @package  Vulcano
  * @category Bootstrap
- * @author   WPBrasil
- * @version  2.1.4
+ * @author   Paulo Iankoski
+ * @version  1.0.0
  */
 class Odin_Bootstrap_Nav_Walker extends Walker_Nav_Menu {
 

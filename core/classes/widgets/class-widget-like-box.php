@@ -6,8 +6,8 @@
  *
  * @package  Vulcano
  * @category Widget
- * @author   WPBrasil
- * @version  2.2.0
+ * @author   Paulo Iankoski
+ * @version  1.0.0
  */
 class Odin_Widget_Like_Box extends WP_Widget {
 

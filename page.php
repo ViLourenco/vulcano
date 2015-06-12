@@ -7,7 +7,7 @@
  * 'pages' on your WordPress site will use a different template.
  *
  * @package Vulcano
- * @since 2.2.0
+ * @since 1.0.0
  */
 
 get_header(); ?>

@@ -8,8 +8,8 @@
  *
  * @package  Vulcano
  * @category Thumbnail_Resizer
- * @author   WPBrasil
- * @version  2.1.5
+ * @author   Paulo Iankoski
+ * @version  1.0.0
  */
 class Odin_Thumbnail_Resizer {
 

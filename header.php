@@ -5,7 +5,7 @@
  * Displays all of the <head> section and everything up till #main div
  *
  * @package Vulcano
- * @since 2.2.0
+ * @since 1.0.0
  */
 ?><!DOCTYPE html>
 <html class="no-js" <?php language_attributes(); ?>>

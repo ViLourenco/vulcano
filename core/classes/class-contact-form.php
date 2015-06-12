@@ -6,8 +6,8 @@
  *
  * @package  Vulcano
  * @category Contact Form
- * @author   WPBrasil
- * @version  2.3.0
+ * @author   Paulo Iankoski
+ * @version  1.0.0
  */
 class Odin_Contact_Form extends Odin_Front_End_Form {
 

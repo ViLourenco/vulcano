@@ -6,8 +6,8 @@
  *
  * @package  Vulcano
  * @category User Meta
- * @author   WPBrasil
- * @version  2.2.5
+ * @author   Paulo Iankoski
+ * @version  1.0.0
  */
 class Odin_User_Meta {
 

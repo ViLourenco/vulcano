@@ -4,14 +4,14 @@
  *
  * @package  Vulcano
  * @category Vulcano/Helpers
- * @author   WPBrasil
- * @version  2.2.5
+ * @author   Paulo Iankoski
+ * @version  1.0.0
  */
 
 /**
  * Pagination.
  *
- * @since  2.2.0
+ * @since  1.0.0
  *
  * @global array $wp_query   Current WP Query.
  * @global array $wp_rewrite URL rewrite rules.
@@ -76,7 +76,7 @@ function vulcano_pagination( $mid = 2, $end = 1, $show = false, $query = null ) 
  * To show related by tags:
  * Add in single.php <?php vulcano_related_posts( 'tag' ); ?>
  *
- * @since  2.2.0
+ * @since  1.0.0
  *
  * @global array $post         WP global post.
  *
@@ -188,7 +188,7 @@ function vulcano_related_posts( $display = 'category', $qty = 4, $title = '', $t
  * Usage:
  * Place: <?php echo vulcano_excerpt( 'excerpt', value ); ?>
  *
- * @since  2.2.0
+ * @since  1.0.0
  *
  * @param  string $type  Sets excerpt or title.
  * @param  int    $limit Sets the length of excerpt.
@@ -215,7 +215,7 @@ function vulcano_excerpt( $type = 'excerpt', $limit = 40 ) {
 /**
  * Breadcrumbs.
  *
- * @since  2.2.0
+ * @since  1.0.0
  *
  * @param  string $homepage  Homepage name.
  *
@@ -414,7 +414,7 @@ function vulcano_get_image_url( $id, $width, $height, $crop = true, $upscale = f
 /**
  * Custom post thumbnail.
  *
- * @since  2.2.0
+ * @since  1.0.0
  *
  * @param  int     $width   Width of the image.
  * @param  int     $height  Height of the image.
@@ -452,7 +452,7 @@ function vulcano_thumbnail( $width, $height, $alt, $crop = true, $class = '', $u
  * add_action( 'pending_to_publish', 'vulcano_autoset_featured' );
  * add_action( 'future_to_publish', 'vulcano_autoset_featured' );
  *
- * @since  2.2.0
+ * @since  1.0.0
  *
  * @global array $post WP post object.
  *
@@ -479,7 +479,7 @@ function vulcano_autoset_featured() {
 /**
  * Debug variables.
  *
- * @since  2.2.0
+ * @since  1.0.0
  *
  * @param  mixed $variable Object or Array for debug.
  *

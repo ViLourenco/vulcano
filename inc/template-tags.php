@@ -3,7 +3,7 @@
  * Custom template tags for Vulcano.
  *
  * @package Vulcano
- * @since 2.2.0
+ * @since 1.0.0
  */
 
 if ( ! function_exists( 'vulcano_classes_page_full' ) ) {
@@ -11,7 +11,7 @@ if ( ! function_exists( 'vulcano_classes_page_full' ) ) {
 	/**
 	 * Classes page full.
 	 *
-	 * @since 2.2.0
+	 * @since 1.0.0
 	 *
 	 * @return string Classes name.
 	 */
@@ -25,7 +25,7 @@ if ( ! function_exists( 'vulcano_classes_page_sidebar' ) ) {
 	/**
 	 * Classes page with sidebar.
 	 *
-	 * @since 2.2.0
+	 * @since 1.0.0
 	 *
 	 * @return string Classes name.
 	 */
@@ -39,7 +39,7 @@ if ( ! function_exists( 'vulcano_classes_page_sidebar_aside' ) ) {
 	/**
 	 * Classes aside of page with sidebar.
 	 *
-	 * @since 2.2.0
+	 * @since 1.0.0
 	 *
 	 * @return string Classes name.
 	 */
@@ -53,7 +53,7 @@ if ( ! function_exists( 'vulcano_posted_on' ) ) {
 	/**
 	 * Print HTML with meta information for the current post-date/time and author.
 	 *
-	 * @since 2.2.0
+	 * @since 1.0.0
 	 *
 	 * @return void
 	 */
@@ -79,7 +79,7 @@ if ( ! function_exists( 'vulcano_paging_nav' ) ) {
 	/**
 	 * Print HTML with meta information for the current post-date/time and author.
 	 *
-	 * @since 2.2.0
+	 * @since 1.0.0
 	 *
 	 * @return void
 	 */
