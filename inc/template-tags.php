@@ -91,3 +91,22 @@ if ( ! function_exists( 'vulcano_paging_nav' ) ) {
 		echo vulcano_pagination( $mid, $end, false );
 	}
 }
+
+if ( ! function_exists( 'vulcano_images' ) ) {
+
+	/**
+	 * Print HTML with meta information for the current post-date/time and author.
+	 *
+	 * @since 1.0.0
+	 *
+	 * @return void
+	 */
+	function vulcano_images( $url = '', $echo = true ) {
+		$url = get_template_directory_uri() . 'assets/images/' . $url;
+
+		if ( $echo )
+			echo $url;
+		else
+			return $url;
+	}
+}
