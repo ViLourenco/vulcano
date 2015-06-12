@@ -1,3 +1,4 @@
+<?php
 /**
  * Vulcano custom hooks.
  */

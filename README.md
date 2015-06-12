@@ -1,17 +1,15 @@
 # Vulcano Framework #
 
-[Ver essa documentação em Português do Brasil](https://github.com/wpbrasil/vulcano/blob/master/README-pt_BR.md)
+[Ver essa documentação em Português do Brasil](https://github.com/pauloiankoski/vulcano/blob/master/README-pt_BR.md)
 
-![Vulcano Framework](https://i.imgur.com/DdeMgUx.png)
-
-* [Website](http://wpod.in/)
-* [Demo](http://demo.wpod.in/)
-* [GitHub](https://github.com/wpbrasil/vulcano)
-* [WordPress Brasil Group on Facebook](https://www.facebook.com/groups/wordpress.brasil)
+* [GitHub](https://github.com/pauloiankoski/vulcano)
+* [Paulo Iankoski on Facebook](https://www.facebook.com/paulor.com.br)
 
 ## Project Description ##
 
-Welcome to Vulcano, a base-theme developed by [WordPress Brasil Group](https://www.facebook.com/groups/wordpress.brasil), to help on agile development of themes for WordPress.
+Welcome to Vulcano, a base-theme developed by [Paulo Iankoski](https://www.facebook.com/paulor.com.br), to help on agile development of themes for WordPress.
+
+This was based on [Odin Framework](http://github.com/wpbrasil/odin).
 
 ## Installation ##
 
@@ -19,7 +17,7 @@ Send the folder "vulcano" to the default themes folder from WordPress `wp-conten
 
 ## Documentation ##
 
-Informations about how-to use the classes and functions from Vulcano is on the [Official Wiki](https://github.com/wpbrasil/vulcano/wiki/)
+Informations about how-to use the classes and functions from Vulcano is on the [Official Wiki](https://github.com/pauloiankoski/vulcano/wiki/)
 
 ## Plugins Support ##
 
@@ -48,7 +46,7 @@ Vulcano supports natively these plugins:
 
 The Vulcano Framework is an **Open Source** project. Anyone can (and should) help us to improve it.
 
-Report bugs or do suggestions using the [Issues/Project Forum](https://github.com/wpbrasil/vulcano/issues)
+Report bugs or do suggestions using the [Issues/Project Forum](https://github.com/pauloiankoski/vulcano/issues)
 
 ## Contribute to the Project ##
 
@@ -60,11 +58,11 @@ More details about how to contribute and send Pull Requests in [GitHub Collabora
 
 ## Changelog ##
 
-[Changelog here!](https://github.com/wpbrasil/vulcano/blob/master/CHANGELOG.md)
+[Changelog here!](https://github.com/pauloiankoski/vulcano/blob/master/CHANGELOG.md)
 
 ## Copyright and License ##
 
-Copyright 2013 - 2014 - WordPress Brasil Group.
+Copyright 2015 - Paulo Iankoski.
 
 The PHP code is licensed with [GPLv2](http://www.gnu.org/licenses/gpl-2.0.txt).
 All the CSS, SCSS, JS, images files and others, not including the PHP files is licensed with [MIT](http://opensource.org/licenses/MIT) or by the license specified inside the file.

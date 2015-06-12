@@ -1,17 +1,15 @@
 # Vulcano Framework #
 
-[View this documentation in English](https://github.com/wpbrasil/vulcano/blob/master/README.md)
+[View this documentation in English](https://github.com/pauloiankoski/vulcano/blob/master/README.md)
 
-![Vulcano Framework](https://camo.githubusercontent.com/f51173b8da26083e2cfdc893ef532a8bc2457bcb/68747470733a2f2f692e696d6775722e636f6d2f4464654d6755782e706e67)
-
-* [Website](http://wpod.in/)
-* [Demo](http://demo.wpod.in/)
-* [GitHub](https://github.com/wpbrasil/vulcano)
-* [Grupo WordPress Brasil no Facebook](https://www.facebook.com/groups/wordpress.brasil)
+* [GitHub](https://github.com/pauloiankoski/vulcano)
+* [Paulo Iankoski no Facebook](https://www.facebook.com/paulor.com.br)
 
 ## Descrição do Projeto ##
 
-Bem vindos ao Vulcano, um tema base desenvolvido pelo [Grupo WordPress Brasil](https://www.facebook.com/groups/wordpress.brasil), para auxiliar no desenvolvimento ágil de temas para WordPress.
+Bem vindos ao Vulcano, um tema base desenvolvido pelo [Paulo Iankoski](https://www.facebook.com/paulor.com.br), para auxiliar no desenvolvimento ágil de temas para WordPress.
+
+Baseado no [Odin Framework](http://github.com/wpbrasil/odin).
 
 ## Instalação ##
 
@@ -19,7 +17,7 @@ Envie a pasta "vulcano" para a pasta de temas padrão do WordPress `wp-content/t
 
 ## Documentação ##
 
-Informações de como usar as classes e funções do Vulcano na [Wiki Oficial](https://github.com/wpbrasil/vulcano/wiki/)
+Informações de como usar as classes e funções do Vulcano na [Wiki Oficial](https://github.com/pauloiankoski/vulcano/wiki/)
 
 ## Suporte a plugins ##
 
@@ -48,7 +46,7 @@ Vulcano suporta nativamente os plugins:
 
 O Vulcano é um projeto **Open Source**. Qualquer um pode (e deveria) ajudar a melhorá-lo.
 
-Reporte bugs ou faça sugestões utilizando o [Issues/Fórum do Projeto](https://github.com/wpbrasil/vulcano/issues)
+Reporte bugs ou faça sugestões utilizando o [Issues/Fórum do Projeto](https://github.com/pauloiankoski/vulcano/issues)
 
 ## Contribua com o Projeto ##
 
@@ -60,10 +58,10 @@ Mais detalhes de como contribuir e enviar Pull Requests em [GitHub Collaborating
 
 ## Changelog ##
 
-[Changelog aqui!](https://github.com/wpbrasil/vulcano/blob/master/CHANGELOG.md)
+[Changelog aqui!](https://github.com/pauloiankoski/vulcano/blob/master/CHANGELOG.md)
 
 ## Copyright e Licença ##
 
-Copyright 2013 - 2014 - Grupo WordPress Brasil.
+Copyright 2015 - Paulo Iankoski.
 
 O código PHP esta licenciado sob a Licença [GPLv2](http://www.gnu.org/licenses/gpl-2.0.txt). Todos os arquivos CSS, SCSS, JS, imagens e outros não incluindo arquivos PHP estão licenciados como [MIT](http://opensource.org/licenses/MIT) ou pela licença especificada dentro de seus arquivos.

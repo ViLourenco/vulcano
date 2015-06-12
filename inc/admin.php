@@ -78,19 +78,30 @@ remove_action( 'welcome_panel', 'wp_welcome_panel' );
 /**
  * Compile SASS.
  */
-function autoCompileSASS() {
+function auto_compile_sass() {
 	require_once( get_template_directory() . '/core/classes/class-scssc.php' );
 
 	$scss = new scssc();
-	$scss->setFormatter( 'scss_formatter_compressed' );
 	$scss->setImportPaths( get_template_directory() . '/assets/sass/' );
 
 	$css_file = $scss->compile( '@import "style.scss"' );
-	file_put_contents( get_template_directory() . '/assets/css/style.css', $css_file );
+	file_put_contents( get_template_directory() . '/assets/css/style.css', minify_css( $css_file ) );
 
 	$css_file = $scss->compile( '@import "editor-style.scss"' );
-	file_put_contents( get_template_directory() . '/assets/css/editor-style.css', $css_file );
+	file_put_contents( get_template_directory() . '/assets/css/editor-style.css', minify_css( $css_file ) );
+}
+function minify_css( $input ) {
+	// Remove comments
+	$output = preg_replace( '#/\*.*?\*/#s', '', $input );
+	// Remove whitespace
+	$output = preg_replace( '/\s*([{}|:;,])\s+/', '$1', $output );
+	// Remove trailing whitespace at the start
+	$output = preg_replace( '/\s\s+(.*)/', '$1', $output );
+	// Remove unnecesairy ;'s
+	$output = str_replace( ';}', '}', $output );
+
+	return $output;
 }
 if( is_user_logged_in() && !is_admin() ) {
-	add_action('init', 'autoCompileSASS');
+	add_action('init', 'auto_compile_sass');
 }
