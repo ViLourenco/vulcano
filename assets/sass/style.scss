@@ -82,8 +82,17 @@ Description: Vulcano main stylesheet.
 
 /* =General
 -------------------------------------------------------------- */
+* {
+	-webkit-font-smoothing: antialiased;
+}
 html {
 	overflow-y: scroll;
+}
+body {
+	min-width : 990px !important;
+}
+.container {
+	width : 990px !important;
 }
 
 /* =Header

@@ -9,7 +9,7 @@
 
 Bem vindos ao Vulcano, um tema base desenvolvido pelo [Paulo Iankoski](https://www.facebook.com/paulor.com.br), para auxiliar no desenvolvimento ágil de temas para WordPress.
 
-Baseado no [Odin Framework](http://github.com/wpbrasil/odin).
+Baseado no [Vulcano Framework](http://github.com/wpbrasil/odin).
 
 ## Instalação ##
 

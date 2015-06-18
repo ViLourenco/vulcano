@@ -1,6 +1,6 @@
 <?php
 /**
- * Odin_Contact_Form class.
+ * Vulcano_Contact_Form class.
  *
  * Built Contact Forms.
  *
@@ -9,7 +9,7 @@
  * @author   Paulo Iankoski
  * @version  1.0.0
  */
-class Odin_Contact_Form extends Odin_Front_End_Form {
+class Vulcano_Contact_Form extends Vulcano_Front_End_Form {
 
 	/**
 	 * Mail content type.

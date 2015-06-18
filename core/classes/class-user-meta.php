@@ -1,6 +1,6 @@
 <?php
 /**
- * Odin_User_Meta class.
+ * Vulcano_User_Meta class.
  *
  * Built user meta fields.
  *
@@ -9,7 +9,7 @@
  * @author   Paulo Iankoski
  * @version  1.0.0
  */
-class Odin_User_Meta {
+class Vulcano_User_Meta {
 
 	/**
 	 * User meta fields.

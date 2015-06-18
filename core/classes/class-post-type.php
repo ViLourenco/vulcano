@@ -1,6 +1,6 @@
 <?php
 /**
- * Odin_Post_Type class.
+ * Vulcano_Post_Type class.
  *
  * Built Custom Post Types.
  *
@@ -9,7 +9,7 @@
  * @author   Paulo Iankoski
  * @version  1.0.0
  */
-class Odin_Post_Type {
+class Vulcano_Post_Type {
 
 	/**
 	 * Array of labels for the post type.

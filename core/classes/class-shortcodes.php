@@ -1,6 +1,6 @@
 <?php
 /**
- * Odin_Shortcodes class.
+ * Vulcano_Shortcodes class.
  *
  * Built Shortcodes.
  *
@@ -9,7 +9,7 @@
  * @author   Paulo Iankoski
  * @version  1.0.0
  */
-class Odin_Shortcodes {
+class Vulcano_Shortcodes {
 
 	/**
 	 * Construct Post Type.
@@ -692,4 +692,4 @@ class Odin_Shortcodes {
 
 }
 
-new Odin_Shortcodes;
+new Vulcano_Shortcodes;

@@ -1,6 +1,6 @@
 <?php
 /**
- * Odin_Options_Helper class.
+ * Vulcano_Options_Helper class.
  *
  * Helper for get the value of Theme Options.
  *
@@ -9,7 +9,7 @@
  * @author   Paulo Iankoski
  * @version  1.0.0
  */
-class Odin_Options_Helper {
+class Vulcano_Options_Helper {
 
 	/**
 	 * Option for the tab general.

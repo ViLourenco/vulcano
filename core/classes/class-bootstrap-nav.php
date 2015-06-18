@@ -1,6 +1,6 @@
 <?php
 /**
- * Odin_Bootstrap_Nav_Walker class.
+ * Vulcano_Bootstrap_Nav_Walker class.
  *
  * A custom Wordpress nav walker to implement the Bootstrap 3 dropdown navigation using the Wordpress built in menu manager.
  * Inspired by the class twitter_bootstrap_nav_walker <https://github.com/twittem/wp-bootstrap-navwalker>,
@@ -11,7 +11,7 @@
  * @author   Paulo Iankoski
  * @version  1.0.0
  */
-class Odin_Bootstrap_Nav_Walker extends Walker_Nav_Menu {
+class Vulcano_Bootstrap_Nav_Walker extends Walker_Nav_Menu {
 
 	/**
 	 * @see Walker::start_lvl()

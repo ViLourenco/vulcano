@@ -1,6 +1,6 @@
 <?php
 /**
- * Odin_Taxonomy class.
+ * Vulcano_Taxonomy class.
  *
  * Built Custom Taxonomies.
  *
@@ -9,7 +9,7 @@
  * @author   Paulo Iankoski
  * @version  1.0.0
  */
-class Odin_Taxonomy {
+class Vulcano_Taxonomy {
 
 	/**
 	 * Array of labels for the Taxonomy.

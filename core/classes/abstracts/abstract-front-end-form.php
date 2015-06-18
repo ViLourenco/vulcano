@@ -1,6 +1,6 @@
 <?php
 /**
- * Odin_Front_End_Form class.
+ * Vulcano_Front_End_Form class.
  *
  * Built Front-end Forms.
  *
@@ -9,7 +9,7 @@
  * @author   Paulo Iankoski
  * @version  1.0.0
  */
-abstract class Odin_Front_End_Form {
+abstract class Vulcano_Front_End_Form {
 
 	/**
 	 * Form fields.

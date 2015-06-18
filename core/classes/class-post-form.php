@@ -1,6 +1,6 @@
 <?php
 /**
- * Odin_Post_Form class.
+ * Vulcano_Post_Form class.
  *
  * Built Front End Post Forms.
  *
@@ -9,7 +9,7 @@
  * @author   Paulo Iankoski
  * @version  1.0.0
  */
-class Odin_Post_Form extends Odin_Front_End_Form {
+class Vulcano_Post_Form extends Vulcano_Front_End_Form {
 
 	/**
 	 * Post content field.

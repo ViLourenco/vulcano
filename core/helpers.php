@@ -404,7 +404,7 @@ function vulcano_breadcrumbs( $homepage = '' ) {
  * @return string
  */
 function vulcano_get_image_url( $id, $width, $height, $crop = true, $upscale = false ) {
-	$resizer    = Odin_Thumbnail_Resizer::get_instance();
+	$resizer    = Vulcano_Thumbnail_Resizer::get_instance();
 	$origin_url = wp_get_attachment_url( $id );
 	$url        = $resizer->process( $origin_url, $width, $height, $crop, $upscale );
 
@@ -427,7 +427,7 @@ function vulcano_get_image_url( $id, $width, $height, $crop = true, $upscale = f
  * @return string         Return the post thumbnail.
  */
 function vulcano_thumbnail( $width, $height, $alt, $crop = true, $class = '', $upscale = false ) {
-	if ( ! class_exists( 'Odin_Thumbnail_Resizer' ) ) {
+	if ( ! class_exists( 'Vulcano_Thumbnail_Resizer' ) ) {
 		return;
 	}
 

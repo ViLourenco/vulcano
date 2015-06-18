@@ -1,6 +1,6 @@
 <?php
 /**
- * Odin_Widget_Like_Box class.
+ * Vulcano_Widget_Like_Box class.
  *
  * Facebook like widget.
  *
@@ -9,7 +9,7 @@
  * @author   Paulo Iankoski
  * @version  1.0.0
  */
-class Odin_Widget_Like_Box extends WP_Widget {
+class Vulcano_Widget_Like_Box extends WP_Widget {
 
 	/**
 	 * Register widget with WordPress.
@@ -162,7 +162,7 @@ class Odin_Widget_Like_Box extends WP_Widget {
  * @return void
  */
 function vulcano_like_box_widget() {
-	register_widget( 'Odin_Widget_Like_Box' );
+	register_widget( 'Vulcano_Widget_Like_Box' );
 }
 
 add_action( 'widgets_init', 'vulcano_like_box_widget' );

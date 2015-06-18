@@ -1,6 +1,6 @@
 <?php
 /**
- * Odin_Metabox class.
+ * Vulcano_Metabox class.
  *
  * Built Metaboxs.
  *
@@ -9,7 +9,7 @@
  * @author   Paulo Iankoski
  * @version  1.0.0
  */
-class Odin_Metabox {
+class Vulcano_Metabox {
 
 	/**
 	 * Metaboxs fields.

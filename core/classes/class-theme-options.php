@@ -1,6 +1,6 @@
 <?php
 /**
- * Odin_Theme_Options class.
+ * Vulcano_Theme_Options class.
  *
  * Built settings page.
  *
@@ -9,7 +9,7 @@
  * @author   Paulo Iankoski
  * @version  1.0.0
  */
-class Odin_Theme_Options {
+class Vulcano_Theme_Options {
 
 	/**
 	 * Settings tabs.
