@@ -219,11 +219,8 @@ function vulcano_enqueue_scripts() {
 	// jQuery.
 	wp_enqueue_script( 'jquery' );
 
-	// Bootstrap.
-	wp_enqueue_script( 'bootstrap', $template_url . '/assets/js/libs/bootstrap.min.js', array(), null, true );
-
-	// FitVids.
-	wp_enqueue_script( 'fitvids', $template_url . '/assets/js/libs/jquery.fitvids.js', array(), null, true );
+	// Libs.
+	wp_enqueue_script( 'libs', $template_url . '/assets/js/libs.min.js', array(), null, true );
 
 	// HTML5 Fix.
 	wp_enqueue_script( 'html5-fix', $template_url . '/assets/js/html5.js', array(), null, true );
@@ -267,6 +264,12 @@ if ( ! function_exists( 'is_woocommerce_activated' ) ) {
 		return class_exists( 'woocommerce' ) ? true : false;
 	}
 }
+
+/**
+ * Minify.
+ */
+require_once get_template_directory() . '/core/classes/minify/Minify.php';
+require_once get_template_directory() . '/core/classes/minify/JS.php';
 
 /**
  * Core Helpers.

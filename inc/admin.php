@@ -89,6 +89,8 @@ function auto_compile_sass() {
 
 	$css_file = $scss->compile( '@import "editor-style.scss"' );
 	file_put_contents( get_template_directory() . '/assets/css/editor-style.css', minify_css( $css_file ) );
+
+	require_once( get_template_directory() . '/core/classes/minify/auto_load.php' );
 }
 function minify_css( $input ) {
 	// Remove comments
