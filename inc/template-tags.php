@@ -102,7 +102,7 @@ if ( ! function_exists( 'vulcano_images' ) ) {
 	 * @return void
 	 */
 	function vulcano_images( $url = '', $echo = true ) {
-		$url = get_template_directory_uri() . 'assets/images/' . $url;
+		$url = get_template_directory_uri() . '/assets/images/' . $url;
 
 		if ( $echo )
 			echo $url;

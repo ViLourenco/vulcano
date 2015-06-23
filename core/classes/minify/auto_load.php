@@ -4,9 +4,9 @@ use MatthiasMullie\Minify;
 $minifier = new Minify\JS();
 
 foreach ( scandir( get_template_directory() . '/assets/js/libs' ) as $key => $value ) {
-	if ( strlen( $value ) > 2 )
+	if ( strpos( $value, '.js' ) )
 		$minifier->add( get_template_directory() . '/assets/js/libs/' . $value );
 }
 
 $minifiedPath = get_template_directory() . '/assets/js/libs.min.js';
-$minifier->gzip( $minifiedPath );
+$minifier->minify( $minifiedPath );

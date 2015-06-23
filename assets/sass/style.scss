@@ -83,10 +83,11 @@ Description: Vulcano main stylesheet.
 /* =General
 -------------------------------------------------------------- */
 * {
-	-webkit-font-smoothing: antialiased;
+	-webkit-font-smoothing  : antialiased;
+	-moz-osx-font-smoothing : grayscale;
 }
 html {
-	overflow-y: scroll;
+	overflow-y : scroll;
 }
 body {
 	min-width : 990px !important;
@@ -97,109 +98,26 @@ body {
 
 /* =Header
 -------------------------------------------------------------- */
-
 #header {
 
 }
 
-.site-title,
-.site-description {
-	margin-top: $line-height-computed;
-	margin-bottom: ($line-height-computed / 2);
-}
-
-.site-title {
-	a {
-
-		&:hover {
-
-		}
-	}
-}
-
-.site-description {
-
-}
-
-/* =Navigation
+/* =FrontPage
 -------------------------------------------------------------- */
-
-#main-navigation {
-
-}
-
-/* =Search Form
--------------------------------------------------------------- */
-
-#searchform {
-
-}
-
-#s {
-
-}
-
-#searchsubmit {
-
-}
 
 /* =Content
 -------------------------------------------------------------- */
-
-.wrapper {
-
-}
-
-#main {
-
-}
-
-#primary {
-
-}
-
-#content {
-
-}
-
-#secondary {
-
-}
-
-.entry-title {
-	margin-bottom: 0.4em;
-
-	a {
-
-		&:hover {
-
-		}
-	}
-}
-
-.page-header {
-	margin-bottom: 1em;
-}
-
-.page-title {
-
-}
-
-.entry-meta {
-	margin-bottom: $text-margin-bottom;
-
-	a {
+#main-content {
+	.entry-title {
 
 	}
-}
+	.entry-content {
 
-.sticky {
-	font-size: 100%;
+	}
 }
 
 /* =Pagination
 -------------------------------------------------------------- */
-
 .pagination-wrap {
 	text-align: center;
 	margin-top: 15px;
@@ -211,7 +129,6 @@ body {
 
 /* =Comments
 -------------------------------------------------------------- */
-
 .commentlist {
 	margin: 0;
 	padding: 0;
@@ -281,37 +198,8 @@ body {
 /* =Sidebar and Widgets
 -------------------------------------------------------------- */
 
-.widget {
-	margin-bottom: $text-margin-bottom;
-
-	a {
-
-		&:hover {
-
-		}
-	}
-
-	ul {
-
-		ul {
-
-		}
-
-		li {
-
-		}
-	}
-}
-
-/* .widgettitle is a WordPress default */
-.widgettitle,
-.widget-title {
-	margin-bottom: 10px;
-}
-
 /* =Footer
 -------------------------------------------------------------- */
-
 #footer {
 	border-top: 1px solid #ddd;
 	margin-top: 20px;
@@ -321,7 +209,6 @@ body {
 
 /* =Error 404 page
 -------------------------------------------------------------- */
-
 .error404 {
 
 	#searchform {
@@ -331,10 +218,8 @@ body {
 
 /* =Responsive Styles
 -------------------------------------------------------------- */
-
 @import "bootstrap/responsive-utilities";
 
 /* =Print Styles
 -------------------------------------------------------------- */
-
 @import "bootstrap/print";
