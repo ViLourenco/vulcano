@@ -14,8 +14,8 @@ if ( ! function_exists( 'vulcano_before_content' ) ) {
 	 */
 	function vulcano_before_content() {
 		?>
-		<div id="primary" class="<?php echo vulcano_classes_page_full(); ?>">
-			<main id="main" class="site-main" role="main">
+		<div id="primary" class="<?php echo vulcano_classes_page_sidebar(); ?>">
+			<main id="main-content" class="site-main" role="main">
 	    	<?php
 	}
 }
@@ -29,10 +29,9 @@ if ( ! function_exists( 'vulcano_after_content' ) ) {
 	 */
 	function vulcano_after_content() {
 		?>
-			</main><!-- #main -->
+			</main><!-- #main-content -->
 		</div><!-- #primary -->
-
-		<?php # get_sidebar();
+		<?php
 	}
 }
 

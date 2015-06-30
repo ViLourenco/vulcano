@@ -23,11 +23,15 @@ add_action( 'woocommerce_before_main_content', 'vulcano_before_content', 10 );
 add_action( 'woocommerce_after_main_content', 'vulcano_after_content', 10 );
 
 /**
- * Sidebar
+ * Remove Sidebar
+ *
+ * Tip:
+ * Case you use this action, change template page for full-width style in inc/woocommerce/template-tags.php
+ *
  * @see woocommerce_sidebars
  * @since  1.0.0
  */
-remove_action( 'woocommerce_sidebar', 'woocommerce_get_sidebar', 10 );
+// remove_action( 'woocommerce_sidebar', 'woocommerce_get_sidebar', 10 );
 
 /**
  * Breadcrumb

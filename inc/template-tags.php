@@ -11,7 +11,7 @@ if ( ! function_exists( 'vulcano_classes_page_full' ) ) {
 	/**
 	 * Classes page full.
 	 *
-	 * @since 1.0.0
+	 * @since 2.2.0
 	 *
 	 * @return string Classes name.
 	 */
@@ -25,12 +25,12 @@ if ( ! function_exists( 'vulcano_classes_page_sidebar' ) ) {
 	/**
 	 * Classes page with sidebar.
 	 *
-	 * @since 1.0.0
+	 * @since 2.2.0
 	 *
 	 * @return string Classes name.
 	 */
 	function vulcano_classes_page_sidebar() {
-		return 'col-md-8';
+		return 'col-md-9';
 	}
 }
 
@@ -39,12 +39,12 @@ if ( ! function_exists( 'vulcano_classes_page_sidebar_aside' ) ) {
 	/**
 	 * Classes aside of page with sidebar.
 	 *
-	 * @since 1.0.0
+	 * @since 2.2.0
 	 *
 	 * @return string Classes name.
 	 */
 	function vulcano_classes_page_sidebar_aside() {
-		return 'widget-area col-md-4 hidden-xs';
+		return 'col-md-3 hidden-xs hidden-print widget-area';
 	}
 }
 
@@ -53,7 +53,7 @@ if ( ! function_exists( 'vulcano_posted_on' ) ) {
 	/**
 	 * Print HTML with meta information for the current post-date/time and author.
 	 *
-	 * @since 1.0.0
+	 * @since 2.2.0
 	 *
 	 * @return void
 	 */
@@ -79,7 +79,7 @@ if ( ! function_exists( 'vulcano_paging_nav' ) ) {
 	/**
 	 * Print HTML with meta information for the current post-date/time and author.
 	 *
-	 * @since 1.0.0
+	 * @since 2.2.0
 	 *
 	 * @return void
 	 */
@@ -89,24 +89,5 @@ if ( ! function_exists( 'vulcano_paging_nav' ) ) {
 		$show = false; // Show all items.
 
 		echo vulcano_pagination( $mid, $end, false );
-	}
-}
-
-if ( ! function_exists( 'vulcano_images' ) ) {
-
-	/**
-	 * Print HTML with meta information for the current post-date/time and author.
-	 *
-	 * @since 1.0.0
-	 *
-	 * @return void
-	 */
-	function vulcano_images( $url = '', $echo = true ) {
-		$url = get_template_directory_uri() . '/assets/images/' . $url;
-
-		if ( $echo )
-			echo $url;
-		else
-			return $url;
 	}
 }
