@@ -477,6 +477,22 @@ function vulcano_autoset_featured() {
 }
 
 /**
+ * Return template image URL
+ *
+ * @since 1.0.0
+ *
+ * @return void
+ */
+function vulcano_images( $url = '', $echo = true ) {
+	$url = get_template_directory_uri() . '/assets/images/' . $url;
+
+	if ( $echo )
+		echo $url;
+	else
+		return $url;
+}
+
+/**
  * Debug variables.
  *
  * @since  1.0.0
