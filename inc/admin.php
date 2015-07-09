@@ -107,3 +107,74 @@ function minify_css( $input ) {
 if( is_user_logged_in() && !is_admin() ) {
 	add_action('init', 'auto_compile_sass');
 }
+
+// Add Shortcode
+function shortcode_grid( $atts , $content = null ) {
+	$atts = shortcode_atts( array(
+		'open'   => false,
+		'close'  => false,
+		'cols'   => '',
+		'offset' => '',
+		'class'  => ''
+	), $atts );
+
+	if ( $atts['cols'] > 0 )
+		$atts['cols'] = sprintf( 'col-xs-%d', $atts['cols'] );
+	if ( $atts['offset'] > 0 )
+		$atts['offset'] = sprintf( 'col-xs-offset-%d', $atts['offset'] );
+
+	$return = sprintf( '<div class="%s %s %s">%s</div>', $atts['cols'], $atts['offset'], $atts['class'], apply_filters( 'the_content', $content ) );
+	if ( $atts['open'] )
+		$return = '<div class="row">' . $return;
+	if ( $atts['close'] )
+		$return = $return . '</div>';
+
+	return $return;
+}
+add_shortcode( 'grid', 'shortcode_grid' );
+
+function remove_empty_tags_around_shortcodes( $content ){
+	$tags = array(
+		'<p>[' => '[',
+		']</p>' => ']',
+		']<br>' => ']',
+		']<br />' => ']'
+	);
+
+	$content = strtr( $content, $tags );
+	return $content;
+}
+add_filter( 'the_content', 'remove_empty_tags_around_shortcodes' );
+
+//Fix Contact Form 7 Submit Button
+remove_action( 'wpcf7_init', 'wpcf7_add_shortcode_submit', 20 );
+add_action( 'wpcf7_init', 'wpcf7_add_shortcode_submit_button' );
+
+function wpcf7_add_shortcode_submit_button() {
+	wpcf7_add_shortcode( 'submit', 'wpcf7_submit_button_shortcode_handler' );
+}
+
+function wpcf7_submit_button_shortcode_handler( $tag ) {
+	$tag = new WPCF7_Shortcode( $tag );
+
+	$class = wpcf7_form_controls_class( $tag->type );
+
+	$atts = array();
+
+	$atts['class'] = $tag->get_class_option( $class );
+	$atts['id'] = $tag->get_id_option();
+	$atts['tabindex'] = $tag->get_option( 'tabindex', 'int', true );
+
+	$value = isset( $tag->values[0] ) ? $tag->values[0] : '';
+
+	if ( empty( $value ) )
+		$value = __( 'Send', 'contact-form-7' );
+
+	$atts['type'] = 'submit';
+
+	$atts = wpcf7_format_atts( $atts );
+
+	$html = sprintf( '<button %1$s>%2$s</button>', $atts, $value );
+
+	return $html;
+}
