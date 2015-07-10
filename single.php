@@ -8,8 +8,7 @@
 
 get_header(); ?>
 
-	<div id="primary" class="<?php echo vulcano_classes_page_sidebar(); ?>">
-		<main id="main-content" class="site-main" role="main">
+	<main id="content" class="<?php echo vulcano_classes_page_sidebar(); ?>" tabindex="-1" role="main">
 			<?php
 				// Start the Loop.
 				while ( have_posts() ) : the_post();
@@ -27,8 +26,7 @@ get_header(); ?>
 					endif;
 				endwhile;
 			?>
-		</main><!-- #main -->
-	</div><!-- #primary -->
+	</main><!-- #main -->
 
 <?php
 get_sidebar();
