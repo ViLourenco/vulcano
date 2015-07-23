@@ -17,6 +17,14 @@
 		<div class="container">
 			<p>&copy; <?php echo date( 'Y' ); ?> <a href="<?php echo home_url(); ?>"><?php bloginfo( 'name' ); ?></a> - <?php _e( 'All rights reserved', 'vulcano' ); ?></p>
 		</div><!-- .container -->
+		<div class="site-info">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-9"><p>&copy; <?php echo date( 'Y' ); ?> <a href="<?php echo home_url(); ?>"><?php bloginfo( 'name' ); ?></a> - <?php _e( 'All rights reserved', 'vulcano' ); ?></p></div>
+					<div class="col-xs-3">Alexandre Carvalho</div>
+				</div>
+			</div><!-- .container -->
+		</div><!-- .site-info -->
 	</footer><!-- #footer -->
 
 	<?php wp_footer(); ?>
