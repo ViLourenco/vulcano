@@ -104,7 +104,7 @@ function minify_css( $input ) {
 
 	return $output;
 }
-if( is_user_logged_in() && !is_admin() ) {
+if( is_user_logged_in() && !is_admin() && isset( $_GET['compile'] ) ) {
 	add_action('init', 'auto_compile_sass');
 }
 
