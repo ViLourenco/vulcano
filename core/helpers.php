@@ -511,6 +511,6 @@ function vulcano_debug( $variable ) {
  * @return string               Field value
  */
 function vulcano_get_term_meta( $term_id, $field ) {
-	$option = sprintf( 'vulcano_term_meta_%s_%s', $id, $field );
+	$option = sprintf( 'vulcano_term_meta_%s_%s', $term_id, $field );
 	return get_option( $option );
 }
