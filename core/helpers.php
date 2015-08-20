@@ -242,9 +242,12 @@ function vulcano_breadcrumbs( $homepage = '' ) {
 			if ( 'post' != $post->post_type ) {
 				// But if Woocommerce
 				if ( 'product' === $post->post_type ) {
-					$shop_page    = get_post( wc_get_page_id( 'shop' ) );
-					echo '<li><a href="' . get_permalink( $shop_page ) . '">' . get_the_title( $shop_page ) . '</a></li>';
-					// Gets Woocommerce post type taxonomies.
+					if ( is_woocommerce_activated() ) {
+						$shop_page    = get_post( wc_get_page_id( 'shop' ) );
+						echo '<li><a href="' . get_permalink( $shop_page ) . '">' . get_the_title( $shop_page ) . '</a></li>';
+					}
+
+					// Gets post type taxonomies.
 					$taxonomy = get_object_taxonomies( 'product' );
 					$taxy = 'product_cat';
 				} else {
@@ -320,7 +323,7 @@ function vulcano_breadcrumbs( $homepage = '' ) {
 		// Custom post type archive.
 		} elseif ( is_post_type_archive() ) {
 			// Check if Woocommerce Shop
-			if ( is_shop() ) {
+			if ( is_woocommerce_activated() && is_shop() ) {
 				$shop_page_id = wc_get_page_id( 'shop' );
 				echo $current_before . get_the_title( $shop_page_id ) . $current_after;
 			} else {
@@ -400,7 +403,7 @@ function vulcano_get_image_url( $id, $width, $height, $crop = true, $upscale = f
 	$origin_url = wp_get_attachment_url( $id );
 	$url        = $resizer->process( $origin_url, $width, $height, $crop, $upscale );
 
-	return $url;
+	return ( $url ? $url : $origin_url );
 }
 
 /**
@@ -478,10 +481,11 @@ function vulcano_autoset_featured() {
 function vulcano_images( $url = '', $echo = true ) {
 	$url = get_template_directory_uri() . '/assets/images/' . $url;
 
-	if ( $echo )
+	if ( $echo ) {
 		echo $url;
-	else
+	} else {
 		return $url;
+	}
 }
 
 /**
