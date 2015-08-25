@@ -30,35 +30,19 @@
 		<div class="container">
 
 			<div class="page-header hidden-xs">
-				<?php if ( is_home() ) : ?>
+				<?php if ( is_front_page() ) : ?>
 					<h1 class="site-title"><a href="<?php echo home_url(); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-					<h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
 				<?php else : ?>
 					<div class="site-title h1"><a href="<?php echo home_url(); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></div>
-					<div class="site-description h2"><?php bloginfo( 'description' ); ?></div>
 				<?php endif ?>
-
-				<?php
-					$header_image = get_header_image();
-					if ( ! empty( $header_image ) ) :
-				?>
-					<a href="<?php echo esc_url( home_url( '/' ) ); ?>">
-						<img src="<?php echo esc_url( $header_image ); ?>" height="<?php esc_attr_e( $header_image->height ); ?>" width="<?php esc_attr_e( $header_image->width ); ?>" alt="" />
-					</a>
-				<?php endif; ?>
 			</div><!-- .site-header-->
 
 			<div id="main-navigation" class="navbar navbar-default">
 				<div class="navbar-header">
-					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-navigation">
-					<span class="sr-only"><?php _e( 'Toggle navigation', 'vulcano' ); ?></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-					</button>
+					<button type="button" class="navbar-toggler hidden-sm-up" data-toggle="collapse" data-target=".navbar-main-navigation">&#9776;</button>
 					<a class="navbar-brand visible-xs-block" href="<?php echo home_url(); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
 				</div>
-				<nav class="collapse navbar-collapse navbar-main-navigation" role="navigation">
+				<nav class="collapse navbar-toggleable-xs navbar-main-navigation" role="navigation">
 					<?php
 						wp_nav_menu(
 							array(
