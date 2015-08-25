@@ -40,7 +40,7 @@
 			<div id="main-navigation" class="navbar navbar-default">
 				<div class="navbar-header">
 					<button type="button" class="navbar-toggler hidden-sm-up" data-toggle="collapse" data-target=".navbar-main-navigation">&#9776;</button>
-					<a class="navbar-brand visible-xs-block" href="<?php echo home_url(); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
+					<a class="navbar-brand hidden-sm-up" href="<?php echo home_url(); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
 				</div>
 				<nav class="collapse navbar-toggleable-xs navbar-main-navigation" role="navigation">
 					<?php
@@ -55,12 +55,9 @@
 							)
 						);
 					?>
-					<form method="get" class="navbar-form navbar-right" action="<?php echo esc_url( home_url( '/' ) ); ?>" role="search">
-						<label for="navbar-search" class="sr-only"><?php _e( 'Search:', 'vulcano' ); ?></label>
-						<div class="form-group">
-							<input type="search" class="form-control" name="s" id="navbar-search" />
-						</div>
-						<button type="submit" class="btn btn-default"><?php _e( 'Search', 'vulcano' ); ?></button>
+					<form class="form-inline navbar-form pull-right" method="get" action="<?php echo esc_url( home_url( '/' ) ); ?>" role="search">
+						<input class="form-control" type="text" placeholder="<?php _e( 'Search:', 'vulcano' ); ?>">
+						<button class="btn btn-success-outline" type="submit"><?php _e( 'Search', 'vulcano' ); ?></button>
 					</form>
 				</nav><!-- .navbar-collapse -->
 			</div><!-- #main-navigation-->
