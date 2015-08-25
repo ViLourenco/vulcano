@@ -40,7 +40,7 @@ gulp.task('default', ['styles', 'scripts'], function(){
 	  console.log('File ' + event.path + ' was ' + event.type + ', running tasks...');
 	});
 
-	var watcher_js = gulp.watch('../assets/js/*.js', ['scripts']);
+	var watcher_js = gulp.watch('../assets/js/main.js', ['scripts']);
 	watcher_js.on('change', function(event) {
 	  console.log('File ' + event.path + ' was ' + event.type + ', running tasks...');
 	});
