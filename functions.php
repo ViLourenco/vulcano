@@ -221,14 +221,20 @@ function vulcano_enqueue_scripts() {
 	// jQuery.
 	wp_enqueue_script( 'jquery' );
 
-	// Libs.
-	wp_enqueue_script( 'libs', $template_url . '/assets/js/libs.min.js', array(), null, true );
+	// General scripts.
+	if ( defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG ) {
+		// Bootstrap.
+		wp_enqueue_script( 'bootstrap', $template_url . '/assets/js/libs/bootstrap.min.js', array(), null, true );
 
-	// HTML5 Fix.
-	wp_enqueue_script( 'html5-fix', $template_url . '/assets/js/html5.js', array(), null, true );
+		// FitVids.
+		wp_enqueue_script( 'fitvids', $template_url . '/assets/js/libs/jquery.fitvids.js', array(), null, true );
 
-	// Main jQuery.
-	wp_enqueue_script( 'vulcano-main', $template_url . '/assets/js/main.js', array(), null, true );
+		// Main jQuery.
+		wp_enqueue_script( 'vulcano-main', $template_url . '/assets/js/main.js', array(), null, true );
+	} else {
+		// Grunt main file with Bootstrap, FitVids and others libs.
+		wp_enqueue_script( 'vulcano-main-min', $template_url . '/assets/js/main.min.js', array(), null, true );
+	}
 
 	// Load Thread comments WordPress script.
 	if ( is_singular() && get_option( 'thread_comments' ) ) {
@@ -249,7 +255,11 @@ add_action( 'wp_enqueue_scripts', 'vulcano_enqueue_scripts', 1 );
  * @return string      New URI.
  */
 function vulcano_stylesheet_uri( $uri, $dir ) {
-	return $dir . '/assets/css/style.css';
+	if ( defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG ) {
+		return $dir . '/assets/css/style.css';
+	} else {
+		return $dir . '/assets/css/style.min.css';
+	}
 }
 
 add_filter( 'stylesheet_uri', 'vulcano_stylesheet_uri', 10, 2 );
