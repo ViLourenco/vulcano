@@ -80,17 +80,54 @@ function shortcode_grid( $atts , $content = null ) {
 	$atts = shortcode_atts( array(
 		'open'   => false,
 		'close'  => false,
-		'cols'   => '',
-		'offset' => '',
+		'xs'   => '',
+		'sm'   => '',
+		'md'   => '',
+		'lg'   => '',
+		'xl'   => '',
+		'offset-xs'   => '',
+		'offset-sm'   => '',
+		'offset-md'   => '',
+		'offset-lg'   => '',
+		'offset-xl'   => '',
+		'pull-xs'   => '',
+		'pull-sm'   => '',
+		'pull-md'   => '',
+		'pull-lg'   => '',
+		'pull-xl'   => '',
+		'push-xs'   => '',
+		'push-sm'   => '',
+		'push-md'   => '',
+		'push-lg'   => '',
+		'push-xl'   => '',
 		'class'  => ''
 	), $atts );
 
-	if ( $atts['cols'] > 0 )
-		$atts['cols'] = sprintf( 'col-xs-%d', $atts['cols'] );
-	if ( $atts['offset'] > 0 )
-		$atts['offset'] = sprintf( 'col-xs-offset-%d', $atts['offset'] );
+	$class = array();
+	if ( $atts['xs'] ) $class[] = 'col-xs-' . $atts['xs'];
+	if ( $atts['sm'] ) $class[] = 'col-sm-' . $atts['sm'];
+	if ( $atts['md'] ) $class[] = 'col-md-' . $atts['md'];
+	if ( $atts['lg'] ) $class[] = 'col-lg-' . $atts['lg'];
+	if ( $atts['xl'] ) $class[] = 'col-xl-' . $atts['xl'];
+	if ( $atts['offset-xs'] ) $class[] = 'col-xs-offset-' . $atts['offset-xs'];
+	if ( $atts['offset-sm'] ) $class[] = 'col-sm-offset-' . $atts['offset-sm'];
+	if ( $atts['offset-md'] ) $class[] = 'col-md-offset-' . $atts['offset-md'];
+	if ( $atts['offset-lg'] ) $class[] = 'col-lg-offset-' . $atts['offset-lg'];
+	if ( $atts['offset-xl'] ) $class[] = 'col-xl-offset-' . $atts['offset-xl'];
+	if ( $atts['pull-xs'] ) $class[] = 'col-xs-pull-' . $atts['pull-xs'];
+	if ( $atts['pull-sm'] ) $class[] = 'col-sm-pull-' . $atts['pull-sm'];
+	if ( $atts['pull-md'] ) $class[] = 'col-md-pull-' . $atts['pull-md'];
+	if ( $atts['pull-lg'] ) $class[] = 'col-lg-pull-' . $atts['pull-lg'];
+	if ( $atts['pull-xl'] ) $class[] = 'col-xl-pull-' . $atts['pull-xl'];
+	if ( $atts['push-xs'] ) $class[] = 'col-xs-push-' . $atts['push-xs'];
+	if ( $atts['push-sm'] ) $class[] = 'col-sm-push-' . $atts['push-sm'];
+	if ( $atts['push-md'] ) $class[] = 'col-md-push-' . $atts['push-md'];
+	if ( $atts['push-lg'] ) $class[] = 'col-lg-push-' . $atts['push-lg'];
+	if ( $atts['push-xl'] ) $class[] = 'col-xl-push-' . $atts['push-xl'];
+	if ( $atts['class'] ) $class[] = $atts['class'];
 
-	$return = sprintf( '<div class="%s %s %s">%s</div>', $atts['cols'], $atts['offset'], $atts['class'], apply_filters( 'the_content', $content ) );
+
+	$return = sprintf( '<div class="%s">%s</div>', implode(' ', $class ), apply_filters( 'the_content', $content ) );
 	if ( $atts['open'] )
 		$return = '<div class="row">' . $return;
 	if ( $atts['close'] )
