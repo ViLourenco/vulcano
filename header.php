@@ -31,16 +31,16 @@
 
 			<div class="page-header hidden-xs">
 				<?php if ( is_front_page() ) : ?>
-					<h1 class="site-title"><a href="<?php echo home_url(); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+					<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 				<?php else : ?>
-					<div class="site-title h1"><a href="<?php echo home_url(); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></div>
+					<div class="site-title h1"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></div>
 				<?php endif ?>
 			</div><!-- .site-header-->
 
 			<div id="main-navigation" class="navbar navbar-default">
 				<div class="navbar-header">
 					<button type="button" class="navbar-toggler hidden-sm-up" data-toggle="collapse" data-target=".navbar-main-navigation">&#9776;</button>
-					<a class="navbar-brand hidden-sm-up" href="<?php echo home_url(); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
+					<a class="navbar-brand hidden-sm-up" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
 				</div>
 				<nav class="collapse navbar-toggleable-xs navbar-main-navigation" role="navigation">
 					<?php
@@ -56,7 +56,7 @@
 						);
 					?>
 					<form class="form-inline navbar-form pull-right" method="get" action="<?php echo esc_url( home_url( '/' ) ); ?>" role="search">
-						<input class="form-control" type="text" placeholder="<?php _e( 'Search:', 'vulcano' ); ?>">
+						<input type="search" value="<?php echo get_search_query(); ?>" class="form-control" name="s" placeholder="<?php _e( 'Search:', 'vulcano' ); ?>">
 						<button class="btn btn-success-outline" type="submit"><?php _e( 'Search', 'vulcano' ); ?></button>
 					</form>
 				</nav><!-- .navbar-collapse -->

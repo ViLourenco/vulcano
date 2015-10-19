@@ -7,7 +7,7 @@
  * @package  Vulcano
  * @category Widget
  * @author   Paulo Iankoski
- * @version  1.0.0
+ * @version  2.2.0
  */
 class Vulcano_Widget_Like_Box extends WP_Widget {
 
@@ -71,8 +71,8 @@ class Vulcano_Widget_Like_Box extends WP_Widget {
 			<label for="<?php echo $this->get_field_id( 'color_scheme' ); ?>">
 				<?php _e( 'Color Scheme:', 'vulcano' ); ?>
 				<select id="<?php echo $this->get_field_id( 'color_scheme' ); ?>" class="widefat" name="<?php echo $this->get_field_name( 'color_scheme' ); ?>">
-					<option value="dark" <?php selected( 'dark', $color_scheme, true ); ?>><?php _e( 'Dark','vulcano' ); ?></option>
-					<option value="light" <?php selected( 'light', $color_scheme, true ); ?>><?php _e( 'Light','vulcano' ); ?></option>
+					<option value="dark" <?php selected( 'dark', $color_scheme, true ); ?>><?php _e( 'Dark', 'vulcano' ); ?></option>
+					<option value="light" <?php selected( 'light', $color_scheme, true ); ?>><?php _e( 'Light', 'vulcano' ); ?></option>
 				</select>
 			</label>
 		</p>
@@ -158,8 +158,6 @@ class Vulcano_Widget_Like_Box extends WP_Widget {
 
 /**
  * Register the Like Box Widget.
- *
- * @return void
  */
 function vulcano_like_box_widget() {
 	register_widget( 'Vulcano_Widget_Like_Box' );
